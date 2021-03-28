@@ -8,14 +8,19 @@ fun main(args: Array<String>) {
     println(7%2)
     println("\n")
 
-    val a = 4
-    val b = 2
+    val m = -2
+    val n = m.unaryMinus()
+    println("n:$n")
+        // se convierte el dato a positivo, siguiendo la regla de signos - * - = +
 
-    println(a.plus(b))
-    println(a.minus(b))
-    println(a.times(b))
-    println(a.div(b))
+    var c = true
+    var d = c.not()
+    println("d:$d")
+    //al utilizar datos logicos, la funcion not() no sera la unica que podemos usar, tenemos otras opciones
 
+    val a = -12
+    val b = 12
 
+    println("a es mayor que b. ${a>b}")
 
 }
