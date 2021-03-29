@@ -1,3 +1,6 @@
+const val N = "name" // variables que no se pueden reasignar pero que se mantien constantes variables globales
+var n = "n" //mala practica por que la variable puede ser modificada en n funciones usar ene menor cantidad
+val n2 = "n" // para variables asignadas de formas local para ser accesdidas en tiempo de ejecuacion
 fun main(args: Array<String>) {
     println("Hola mundo desde platzi")
 
@@ -16,6 +19,9 @@ fun main(args: Array<String>) {
     println(a.times(b))
     println(a.div(b))
 
-
+    val name = args[0] //tiempo de ejcuacion
+    //const tiempo de compilacion
+    println(name)
+    println(N)
 
 }
