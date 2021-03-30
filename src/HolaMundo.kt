@@ -22,6 +22,7 @@ fun main(args: Array<String>) {
 
     val suma = arrayObject.sum()
     println("La suma de la array es: $suma")
+
     for(a in arrayObject){
         println("Array: $a")
     }
