@@ -50,4 +50,92 @@ fun main(args: Array<String>) {
         println("mensaje do while: $cont")
         cont++
     }while (cont < 1)
+
+    //colecciones
+    var daysOfWeek = listOf("Domingo", "Lunes","Martes", "Miercoles", "Jueves", "Viernes", "Sabado")
+
+    for (day in daysOfWeek){
+        println(day)
+    }
+
+    for ((index, day) in daysOfWeek.withIndex()){
+        println("$index:$day")
+    }
+
+    //uso de foreach para recorrer los dias o un lita o coleccion
+    daysOfWeek.forEach{
+        println(it)
+    }
+//usando brack
+    for (i in 1..3){
+        println("\ni:$i")
+        for (j in 1..5){
+            if (j.equals(3))
+                break
+            println("j:$j")
+        }
+    }
+
+    for (i in 1..3){
+        println("\ni:$i")
+        for (j in 1..5){
+            if (j.equals(3))
+                continue
+            println("j:$j")
+        }
+    }
+
+
+    // breal y label
+    //usando brack
+    for (i in 1..3){
+        println("\ni:$i")
+        for (j in 1..3){
+            println("\nj:$j")
+            for (k in 1..5){
+                if (k.equals(3)) break
+                println("k:$k")
+            }
+
+        }
+    }
+
+    //usando label
+
+    terminarTodoCiclo@ for (i in 1..3){
+       println("\ni:$i")
+       for (j in 1..3){
+           println("\nj:$j")
+           for (k in 1..5){
+               if (k.equals(3)) break@terminarTodoCiclo
+               println("k:$k")
+           }
+
+       }
+   }
+    //continue
+    for (i in 1..3){
+        println("\ni:$i")
+        for (j in 1..3){
+            println("\nj:$j")
+            for (k in 1..5){
+                if (k.equals(3)) continue
+                println("k:$k")
+            }
+
+        }
+    }
+
+    //usando continue y label
+    scaparj@ for (i in 1..3){
+        println("\ni:$i")
+        for (j in 1..3){
+            println("\nj:$j")
+            for (k in 1..5){
+                if (k.equals(3)) continue@scaparj
+                println("k:$k")
+            }
+
+        }
+    }
 }
