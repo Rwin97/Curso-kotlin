@@ -1,21 +1,12 @@
 fun main(args: Array<String>) {
     println("Hola mundo desde platzi")
 
-    println(1+1)
-    println(3-1)
-    println(2*2)
-    println(4/2)
-    println(7%2)
-    println("\n")
+    var x = 5
+    println("X es igual a 5? ${x==5}")
 
-    val a = 4
-    val b = 2
-
-    println(a.plus(b))
-    println(a.minus(b))
-    println(a.times(b))
-    println(a.div(b))
-
-
+    var mensaje = "El alor de x es $x"
+    x++
+    println("${mensaje.replace("es", "fue")}, x es igual a: $x")
+    //linea anterior mensaje replace y expresion y valor
 
 }
